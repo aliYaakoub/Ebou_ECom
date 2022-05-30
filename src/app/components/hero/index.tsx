@@ -2,7 +2,7 @@ import React from 'react';
 import Image from './assets/Image.png';
 import { ReactComponent as Box } from '../../assets/dotted_box.svg';
 
-const Hero = () => {
+const Hero: React.FC = () => {
   return (
     <section className="hero h-[900px] grid grid-cols-2 items-center justify-center content-center px-[150px] font-lato">
       <div className="flex flex-col text-[#34251F] max-w-[530px]">

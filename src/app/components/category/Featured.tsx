@@ -4,7 +4,7 @@ import { ReactComponent as Rect } from './assets/Featured-rectangle.svg';
 import { ReactComponent as Box } from '../../assets/dotted_box.svg';
 import Image from './assets/image.png';
 
-const Featured = () => {
+const Featured: React.FC = () => {
   return (
     <section className="grid grid-cols-2 px-[73px] mt-[226px] gap-[100px]">
       <div className="flex items-center justify-end">

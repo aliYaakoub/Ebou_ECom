@@ -3,8 +3,9 @@ import { Helmet } from 'react-helmet-async';
 import { NavBar } from 'app/components/NavBar';
 import Hero from 'app/components/hero';
 import Category from 'app/components/category';
+import BestSeller from 'app/components/bestSeller';
 
-export function HomePage() {
+export const HomePage: React.FC = () => {
   return (
     <div className="bg-white">
       <Helmet>
@@ -17,6 +18,7 @@ export function HomePage() {
       <NavBar />
       <Hero />
       <Category />
+      <BestSeller />
     </div>
   );
-}
+};

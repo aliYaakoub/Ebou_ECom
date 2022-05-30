@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-export function Nav() {
+export const Nav: React.FC = () => {
   return (
     <div className="h-[111px] bg-light-orange flex items-center justify-center font-lato">
       <ul className="font-extrabold text-[#34251F] flex">
@@ -30,4 +30,4 @@ export function Nav() {
       </div>
     </div>
   );
-}
+};

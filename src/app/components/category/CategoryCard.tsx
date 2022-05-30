@@ -1,6 +1,12 @@
 import React from 'react';
 
-const CategoryCard = ({ image, label }) => {
+export type Props = {
+  id?: number;
+  image: string;
+  label: string;
+};
+
+const CategoryCard: React.FC<Props> = ({ image, label }) => {
   if (!image) return <div></div>;
 
   return (

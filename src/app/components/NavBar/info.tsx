@@ -1,7 +1,7 @@
 import React from 'react';
 import { ReactComponent as Flag } from './assets/british_flag.svg';
 
-const Info = () => {
+const Info: React.FC = () => {
   return (
     <div className="h-[43px] bg-dark-orange flex justify-center items-center text-white font-semibold font-lato">
       <p>Shop Your Way To Confidence</p>

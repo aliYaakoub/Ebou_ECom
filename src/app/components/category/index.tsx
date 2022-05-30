@@ -7,26 +7,27 @@ import Pic2 from './assets/pic-2.png';
 import Pic3 from './assets/pic-3.png';
 import CategoryCard from './CategoryCard';
 import Featured from './Featured';
+import { Props as CardPropsType } from './CategoryCard';
 
-const data = [
+const data: CardPropsType[] = [
   {
     id: 1,
-    img: Pic1,
+    image: Pic1,
     label: 'KIDS',
   },
   {
     id: 2,
-    img: Pic2,
+    image: Pic2,
     label: 'MEN',
   },
   {
     id: 3,
-    img: Pic3,
+    image: Pic3,
     label: 'T-SHIRTS',
   },
 ];
 
-const Category = () => {
+const Category: React.FC = () => {
   return (
     <section className="pt-[87px] pb-[138px] min-h-screen">
       <div className="flex flex-col items-center justify-center text-[#34251F]">
@@ -37,7 +38,7 @@ const Category = () => {
         </p>
         <div className="grid grid-cols-3 mt-[47px] relative">
           {data.map(card => (
-            <CategoryCard key={card.id} image={card.img} label={card.label} />
+            <CategoryCard key={card.id} image={card.image} label={card.label} />
           ))}
           <div className="absolute bottom-[-80px] right-[-80px] z-0">
             <Rect />
