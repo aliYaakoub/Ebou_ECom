@@ -17,13 +17,15 @@ const Hero = () => {
           SHOP NOW
         </button>
       </div>
-      <div className="flex items-center justify-center relative">
-        <div className="absolute top-[107px] right-5">
-          <Box />
-        </div>
-        <img src={Image} alt="" />
-        <div className="absolute bottom-[47px] left-5">
-          <Box />
+      <div className="flex items-center justify-center w-auto">
+        <div className="relative">
+          <div className="absolute top-[107px] right-[-67px]">
+            <Box />
+          </div>
+          <img src={Image} alt="" />
+          <div className="absolute bottom-[47px] left-[-67px]">
+            <Box />
+          </div>
         </div>
       </div>
     </section>
