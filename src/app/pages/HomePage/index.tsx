@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { NavBar } from 'app/components/NavBar';
 import Hero from 'app/components/hero';
+import Category from 'app/components/category';
 
 export function HomePage() {
   return (
@@ -15,6 +16,7 @@ export function HomePage() {
       </Helmet>
       <NavBar />
       <Hero />
+      <Category />
     </div>
   );
 }
