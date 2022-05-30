@@ -1,57 +1,33 @@
 import * as React from 'react';
-import styled from 'styled-components/macro';
-import { ReactComponent as DocumentationIcon } from './assets/documentation-icon.svg';
-import { ReactComponent as GithubIcon } from './assets/github-icon.svg';
 
 export function Nav() {
   return (
-    <Wrapper>
-      <Item
-        href="https://cansahin.gitbook.io/react-boilerplate-cra-template/"
-        target="_blank"
-        title="Documentation Page"
-        rel="noopener noreferrer"
-      >
-        <DocumentationIcon />
-        Documentation
-      </Item>
-      <Item
-        href="https://github.com/react-boilerplate/react-boilerplate-cra-template"
-        target="_blank"
-        title="Github Page"
-        rel="noopener noreferrer"
-      >
-        <GithubIcon />
-        Github
-      </Item>
-    </Wrapper>
+    <div className="h-[111px] bg-light-orange flex items-center justify-center font-lato">
+      <ul className="font-extrabold text-[#34251F] flex">
+        <li className="px-[22.5px]">
+          <a href="#">MEN</a>
+        </li>
+        <li className="px-[22.5px]">
+          <a href="#">WOMAN</a>
+        </li>
+        <li className="px-[22.5px]">
+          <a href="#">KIDS</a>
+        </li>
+        <li className="px-[22.5px]">
+          <a href="#">COLLECTION</a>
+        </li>
+        <li className="px-[22.5px]">
+          <a href="#">TRENDS</a>
+        </li>
+      </ul>
+      <div className="absolute right-0 pr-[111px] font-bold ">
+        <button className="rounded-[10px] w-[104px] h-[50px] mr-[22px] text-white bg-dark-orange">
+          Sign Up
+        </button>
+        <button className="rounded-[10px] w-[104px] h-[50px] border-2 border-black">
+          Login
+        </button>
+      </div>
+    </div>
   );
 }
-
-const Wrapper = styled.nav`
-  display: flex;
-  margin-right: -1rem;
-`;
-
-const Item = styled.a`
-  color: ${p => p.theme.primary};
-  cursor: pointer;
-  text-decoration: none;
-  display: flex;
-  padding: 0.25rem 1rem;
-  font-size: 0.875rem;
-  font-weight: 500;
-  align-items: center;
-
-  &:hover {
-    opacity: 0.8;
-  }
-
-  &:active {
-    opacity: 0.4;
-  }
-
-  .icon {
-    margin-right: 0.25rem;
-  }
-`;

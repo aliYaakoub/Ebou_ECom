@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
+
+.hero {
+  background-image: url(./BG.png);
+  background-size: cover;
+}
+
+.font-frank {
+  font-family: 'Frank Ruhl Libre', Arial, Helvetica, sans-serif;
+}
+.font-lato {
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+}
