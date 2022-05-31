@@ -28,6 +28,8 @@ const Carousel: React.FC<Props> = ({ data }) => {
               title={card.title}
               price={card.price}
               discountedPrice={card.discountedPrice}
+              stars={card.stars}
+              lastItem={index === data.length - 1}
             />
           </SwiperSlide>
         ))}
