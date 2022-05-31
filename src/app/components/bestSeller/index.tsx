@@ -12,6 +12,7 @@ const data: CardPropsType[] = [
     title: 'Pastel Long Sleeve',
     price: 220,
     discountedPrice: 140,
+    stars: 5,
   },
   {
     id: 2,
@@ -19,6 +20,7 @@ const data: CardPropsType[] = [
     title: 'Pastel Long Sleeve',
     price: 220,
     discountedPrice: 140,
+    stars: 5,
   },
   {
     id: 3,
@@ -26,6 +28,7 @@ const data: CardPropsType[] = [
     title: 'Pastel Long Sleeve',
     price: 220,
     discountedPrice: 140,
+    stars: 5,
   },
   {
     id: 4,
@@ -33,6 +36,7 @@ const data: CardPropsType[] = [
     title: 'Pastel Long Sleeve',
     price: 220,
     discountedPrice: 140,
+    stars: 5,
   },
   {
     id: 5,
@@ -40,6 +44,7 @@ const data: CardPropsType[] = [
     title: 'Pastel Long Sleeve',
     price: 220,
     discountedPrice: 140,
+    stars: 5,
   },
 ];
 

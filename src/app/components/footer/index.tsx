@@ -33,20 +33,38 @@ const Footer: React.FC = () => {
       <div>
         <h2 className="font-bold mb-[20px]">CATEGORIES</h2>
         <ul>
-          <li className="leading-[28.8px] mb-[6px]">Female fashion</li>
-          <li className="leading-[28.8px] mb-[6px]">Male fashion</li>
-          <li className="leading-[28.8px] mb-[6px]">Jewelry & Watches</li>
-          <li className="leading-[28.8px] mb-[6px]">Bags & Shoes</li>
+          <li className="leading-[28.8px] mb-[6px]">
+            <a href="#">Female fashion</a>
+          </li>
+          <li className="leading-[28.8px] mb-[6px]">
+            <a href="#">Male fashion</a>
+          </li>
+          <li className="leading-[28.8px] mb-[6px]">
+            <a href="#">Jewelry & Watches</a>
+          </li>
+          <li className="leading-[28.8px] mb-[6px]">
+            <a href="#">Bags & Shoes</a>
+          </li>
         </ul>
       </div>
       <div>
         <h2 className="font-bold mb-[20px]">INFORMTION</h2>
         <ul>
-          <li className="leading-[28.8px] mb-[6px]">About Us</li>
-          <li className="leading-[28.8px] mb-[6px]">Contact Us</li>
-          <li className="leading-[28.8px] mb-[6px]">Terms & Condition</li>
-          <li className="leading-[28.8px] mb-[6px]">Return & Exchange</li>
-          <li className="leading-[28.8px] mb-[6px]">Shipping & Delivery</li>
+          <li className="leading-[28.8px] mb-[6px]">
+            <a href="#">About Us</a>
+          </li>
+          <li className="leading-[28.8px] mb-[6px]">
+            <a href="#">Contact Us</a>
+          </li>
+          <li className="leading-[28.8px] mb-[6px]">
+            <a href="#">Terms & Condition</a>
+          </li>
+          <li className="leading-[28.8px] mb-[6px]">
+            <a href="#">Return & Exchange</a>
+          </li>
+          <li className="leading-[28.8px] mb-[6px]">
+            <a href="#">Shipping & Delivery</a>
+          </li>
         </ul>
       </div>
       <div>
@@ -56,18 +74,18 @@ const Footer: React.FC = () => {
         </p>
         <h2 className="font-bold mb-[16px]">JOIN US ON</h2>
         <div className="flex items-center">
-          <div className="mr-[32px]">
+          <a href="#" className="mr-[32px]">
             <FacebookIcon />
-          </div>
-          <div className="mr-[32px]">
+          </a>
+          <a href="#" className="mr-[32px]">
             <TwitterIcon />
-          </div>
-          <div className="mr-[32px]">
+          </a>
+          <a href="#" className="mr-[32px]">
             <InstagramIcon />
-          </div>
-          <div className="mr-[32px]">
+          </a>
+          <a href="#" className="mr-[32px]">
             <LinkedInIcon />
-          </div>
+          </a>
         </div>
       </div>
       <div></div>

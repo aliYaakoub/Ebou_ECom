@@ -8,6 +8,8 @@ export type Props = {
   price: number;
   discountedPrice: number;
   opacity?: string;
+  stars: number;
+  lastItem?: boolean;
 };
 
 const BestSellerCard: React.FC<Props> = ({
@@ -16,21 +18,17 @@ const BestSellerCard: React.FC<Props> = ({
   price,
   discountedPrice,
   opacity,
+  stars,
+  lastItem = false,
 }) => {
   return (
     <div
-      style={{ opacity: opacity ? opacity : '1' }}
+      style={{ opacity: lastItem ? '1' : opacity ? opacity : '1' }}
       className="w-[363px] h-[538px] bg-white flex flex-col rounded-b-[6px] text-[#34251F] transition-opacity duration-300"
     >
       <img src={image} alt="" width={363} height={387} />
       <div className="flex flex-col justify-center flex-grow pl-[39px]">
-        <div className="flex items-center">
-          <Star />
-          <Star />
-          <Star />
-          <Star />
-          <Star />
-        </div>
+        <div className="flex items-center">{Array(stars).fill(<Star />)}</div>
         <p className="font-bold text-lg font-frank pt-[14px] pb-[8px]">
           {title}
         </p>
