@@ -8,6 +8,7 @@ import Products from 'app/components/products';
 import DealOfTheDay from 'app/components/dealOfTheDay';
 import Testimonials from 'app/components/testimonials';
 import NewsLetter from 'app/components/newsLetter';
+import InstagramAd from 'app/components/instagramAd';
 
 export const HomePage: React.FC = () => {
   return (
@@ -27,6 +28,7 @@ export const HomePage: React.FC = () => {
       <DealOfTheDay />
       <Testimonials />
       <NewsLetter />
+      <InstagramAd />
     </div>
   );
 };
