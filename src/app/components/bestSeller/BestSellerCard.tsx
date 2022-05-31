@@ -15,11 +15,27 @@ const BestSellerCard: React.FC<Props> = ({
   price,
   discountedPrice,
 }) => {
-  if (!image) return <div></div>;
+  // const El: any = React.useRef(null);
+  // var rect = El.current && El.current.getBoundingClientRect();
+  // const [opacity, setOpacity] = React.useState(1);
+
+  // React.useEffect(() => {
+  //   console.log(rect);
+  //   if (!rect) return;
+  //   if (rect.right > window.innerWidth) {
+  //     setOpacity(0.5);
+  //   } else {
+  //     setOpacity(1);
+  //   }
+  // }, [rect]);
 
   return (
-    <div className="min-w-[363px] h-[538px] bg-white flex flex-col mx-5 carousel_child rounded-b-[6px] text-[#34251F]">
-      <img src={image} alt="" />
+    <div
+      // style={{ opacity: opacity }}
+      // ref={El}
+      className="min-w-[363px] h-[538px] bg-white flex flex-col mx-5 carousel_child rounded-b-[6px] text-[#34251F]"
+    >
+      <img src={image} alt="" width={363} height={387} />
       <div className="flex flex-col justify-center flex-grow pl-[39px]">
         <div className="flex items-center">
           <Star />

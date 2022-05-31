@@ -4,6 +4,7 @@ import { NavBar } from 'app/components/NavBar';
 import Hero from 'app/components/hero';
 import Category from 'app/components/category';
 import BestSeller from 'app/components/bestSeller';
+import Products from 'app/components/products';
 
 export const HomePage: React.FC = () => {
   return (
@@ -19,6 +20,7 @@ export const HomePage: React.FC = () => {
       <Hero />
       <Category />
       <BestSeller />
+      <Products />
     </div>
   );
 };
