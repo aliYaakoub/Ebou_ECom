@@ -42,5 +42,5 @@ html {
   scroll-snap-align: start;
 }
 .testimonial_carousel_child {
-  scroll-snap-align: middle;
+  scroll-snap-align: start;
 }

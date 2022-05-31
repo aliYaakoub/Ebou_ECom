@@ -8,7 +8,7 @@ import { ReactComponent as InstagramIcon } from './assets/insta_icon.svg';
 import { ReactComponent as TwitterIcon } from './assets/twitter_icon.svg';
 import { ReactComponent as LinkedInIcon } from './assets/linkedin_icon.svg';
 
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
     <footer className="bg-[#F69F217D] h-[319px] grid grid-cols-6 font-lato text-black pt-[51px] pl-[101px]">
       <div className="col-span-2 flex flex-col  pl-[50px]">

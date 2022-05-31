@@ -1,6 +1,10 @@
 import * as React from 'react';
+import { ReactComponent as CartIcon } from './assets/cart.svg';
+import Cart from 'app/components/cart';
 
 export const Nav: React.FC = () => {
+  const [cartIsOpen, setCartIsOpen] = React.useState(false);
+
   return (
     <div className="h-[111px] bg-light-orange flex items-center justify-center font-lato">
       <ul className="font-extrabold text-[#34251F] flex">
@@ -20,7 +24,13 @@ export const Nav: React.FC = () => {
           <a href="#">TRENDS</a>
         </li>
       </ul>
-      <div className="absolute right-0 pr-[111px] font-bold ">
+      <div className="absolute right-0 pr-[111px] font-bold flex items-center">
+        <button
+          onClick={() => setCartIsOpen(!cartIsOpen)}
+          className="mr-[22px]"
+        >
+          <CartIcon />
+        </button>
         <button className="rounded-[10px] w-[104px] h-[50px] mr-[22px] text-white bg-dark-orange">
           Sign Up
         </button>
@@ -28,6 +38,7 @@ export const Nav: React.FC = () => {
           Login
         </button>
       </div>
+      {cartIsOpen && <Cart action={setCartIsOpen} />}
     </div>
   );
 };
