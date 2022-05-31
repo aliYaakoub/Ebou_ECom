@@ -74,10 +74,18 @@ const Products: React.FC = () => {
     <section className="min-h-screen pt-[80px] text-[#34251F] flex flex-col items-center">
       <h2 className="text-[48px] font-bold font-frank">Our Product</h2>
       <ul className="flex items-center justify-center font-lato text-[15px] pt-[40px] pb-[70px]">
-        <li className="mx-[22.5px] font-bold border-b-2">HOT</li>
-        <li className="mx-[22.5px]">ON SALE</li>
-        <li className="mx-[22.5px]">TRENDING NOW</li>
-        <li className="mx-[22.5px]">NEW ARRIVAL</li>
+        <li className="mx-[22.5px] font-bold border-b-2">
+          <a href="#">HOT</a>
+        </li>
+        <li className="mx-[22.5px]">
+          <a href="#">ON SALE</a>
+        </li>
+        <li className="mx-[22.5px]">
+          <a href="#">TRENDING NOW</a>
+        </li>
+        <li className="mx-[22.5px]">
+          <a href="#">NEW ARRIVAL</a>
+        </li>
       </ul>
       <div className="grid grid-cols-4 gap-[25px]">
         {data.map(card => (
