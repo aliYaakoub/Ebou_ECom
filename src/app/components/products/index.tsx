@@ -17,6 +17,7 @@ const data: CardPropsType[] = [
     title: 'Pastel Long Sleeve',
     price: 220,
     discountedPrice: 140,
+    stars: 5,
   },
   {
     id: 2,
@@ -24,6 +25,7 @@ const data: CardPropsType[] = [
     title: 'Pastel Long Sleeve',
     price: 220,
     discountedPrice: 140,
+    stars: 5,
   },
   {
     id: 3,
@@ -31,6 +33,7 @@ const data: CardPropsType[] = [
     title: 'Pastel Long Sleeve',
     price: 220,
     discountedPrice: 140,
+    stars: 5,
   },
   {
     id: 4,
@@ -38,6 +41,7 @@ const data: CardPropsType[] = [
     title: 'Pastel Long Sleeve',
     price: 220,
     discountedPrice: 140,
+    stars: 5,
   },
   {
     id: 5,
@@ -45,6 +49,7 @@ const data: CardPropsType[] = [
     title: 'Pastel Long Sleeve',
     price: 220,
     discountedPrice: 140,
+    stars: 5,
   },
   {
     id: 6,
@@ -52,6 +57,7 @@ const data: CardPropsType[] = [
     title: 'Pastel Long Sleeve',
     price: 220,
     discountedPrice: 140,
+    stars: 5,
   },
   {
     id: 7,
@@ -59,6 +65,7 @@ const data: CardPropsType[] = [
     title: 'Pastel Long Sleeve',
     price: 220,
     discountedPrice: 140,
+    stars: 5,
   },
   {
     id: 8,
@@ -66,6 +73,7 @@ const data: CardPropsType[] = [
     title: 'Pastel Long Sleeve',
     price: 220,
     discountedPrice: 140,
+    stars: 5,
   },
 ];
 
@@ -91,6 +99,7 @@ const Products: React.FC = () => {
         {data.map(card => (
           <ProductCard
             key={card.id}
+            stars={card.stars}
             image={card.image}
             title={card.title}
             price={card.price}
