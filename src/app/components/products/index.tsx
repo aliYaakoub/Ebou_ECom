@@ -69,7 +69,7 @@ const data: CardPropsType[] = [
   },
 ];
 
-const Products = () => {
+const Products: React.FC = () => {
   return (
     <section className="min-h-screen pt-[80px] text-[#34251F] flex flex-col items-center">
       <h2 className="text-[48px] font-bold font-frank">Our Product</h2>

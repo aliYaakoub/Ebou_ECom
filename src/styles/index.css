@@ -37,3 +37,6 @@ html {
 .carousel_child {
   scroll-snap-align: start;
 }
+.testimonial_carousel_child {
+  scroll-snap-align: middle;
+}
